@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"/>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent" android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <Button android:layout_weight="1" android:id="@+id/btn_chora"
+                android:layout_width="0dp" android:text="Chora"
+                android:layout_height="wrap_content"/>
+
+            <Button android:layout_weight="1" android:id="@+id/btn_gps"
+                android:layout_width="0dp" android:text="GPS"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</layout>
